@@ -32,7 +32,7 @@ THEN a password is generated that matches the selected criteria
 WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
-> **(User Story and Acceptance Criteria / Challenge 3; CARL-VIRT-FSF-PT-04-2023, README.md 2023)** 
+> **(Main Task, User Story and Acceptance Criteria / Challenge 3; CARL-VIRT-FSF-PT-04-2023, README.md 2023)** 
 
 ## Final Work Review
 
