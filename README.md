@@ -43,10 +43,10 @@ The following images show the web application's appearance and functionality. (S
 
 ### Without generating password
 
-![assets\images\C3-Main.png] (C:\Users\S.NA.THALIE_888\bootcamp\C3-ThePWGenerator\assets\images\C3-Main.png)
+![assets\images\C3-PW.png](assets\images\C3-PW.png)
 
 ### When password is generated
 
-![assets\images\C3-PW.png] (C:\Users\S.NA.THALIE_888\bootcamp\C3-ThePWGenerator\assets\images\C3-PW.png)
+
 
 The assignment can be viewed here: [C3-ThePWGenerator](https://smarquis85.github.io/C3-ThePWGenerator/)
