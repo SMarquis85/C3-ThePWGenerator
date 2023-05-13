@@ -47,4 +47,4 @@ The following images show the web application's appearance and functionality. (S
 ### When password is generated
 ![assets\images\C3-PW.png]
 
-The assignment can be viewed here:![C3-ThePWGenerator](https://smarquis85.github.io/C3-ThePWGenerator/)
+The assignment can be viewed here: [C3-ThePWGenerator](https://smarquis85.github.io/C3-ThePWGenerator/)
