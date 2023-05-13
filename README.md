@@ -42,11 +42,10 @@ THEN the password is either displayed in an alert or written to the page
 The following images show the web application's appearance and functionality. (See below)
 
 ### Without generating password
-
-![assets\images\C3-PW.png](assets\images\C3-PW.png)
+![assets\images\C3-Main.png](assets\images\C3-Main.png)
 
 ### When password is generated
-
+![assets\images\C3-PW.png](assets\images\C3-PW.png)
 
 
 The assignment can be viewed here: [C3-ThePWGenerator](https://smarquis85.github.io/C3-ThePWGenerator/)
