@@ -41,10 +41,10 @@ THEN the password is either displayed in an alert or written to the page
 
 The following images show the web application's appearance and functionality. (See below)
 
-### Without generating password
+### Without generating password:
 ![assets/images/C3-Main.png](assets/images/C3-Main.png)
 
-### When password is generated
+### When password is generated:
 ![assets/images/C3-PW.png](assets/images/C3-PW.png)
 
 
