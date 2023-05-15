@@ -8,14 +8,28 @@ var resetBtn = myDocument.querySelector("#reset");
 
 // Generate Password
 function generatePassword() {
-  var charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+~`|}{[]:;?><,./-=";
-  
-  // Define the minimum and maximum length of the password
-  var minLength = 8;
-  var maxLength = 128;
+  var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+  var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numberChars = "0123456789";
+  var symbolChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
-  // Generate a random password length between minLength and maxLength
-  var passwordLength = Math.floor(Math.random() * (maxLength - minLength + 1) + minLength);
+  // Prompt the user for password length
+  var passwordLength = parseInt(prompt("Enter the desired length of your password (between 8 and 128 characters):"));
+
+  // Validate the user input for password length
+  if (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
+    alert("Invalid password length. Please enter a number between 8 and 128.");
+    return "";
+  }
+
+  // Prompt the user for symbol selection
+  var includeSymbols = confirm("Do you want to include symbols in your password?");
+
+  // Build the character set based on user preferences
+  var charset = lowercaseChars + uppercaseChars + numberChars;
+  if (includeSymbols) {
+    charset += symbolChars;
+  }
 
   // Initialize an empty string to store the generated password
   var password = "";
@@ -30,39 +44,31 @@ function generatePassword() {
   return password;
 }
 
-
 // Write Password
 function writePassword() {
-    var password = generatePassword();
-    var passwordText = myDocument.querySelector("#password");
+  var password = generatePassword();
+  var passwordText = myDocument.querySelector("#password");
 
-    passwordText.value = password;
+  passwordText.value = password;
 }
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
 // Define the submit event handler function
 function handleSubmit(event) {
-  
-  // Prevent the default form submission behavior
   event.preventDefault();
-
 
   var passwordInput = myDocument.querySelector("#password");
   var password = passwordInput.value;
 
- 
   if (password.length < 8 || password.length > 128) {
     alert("Password must be between 8 and 128 characters long.");
     return;
   }
 
- 
   var passwordText = myDocument.querySelector("#password");
   passwordText.value = password;
 }
-
 
 submitBtn.addEventListener("click", handleSubmit);
