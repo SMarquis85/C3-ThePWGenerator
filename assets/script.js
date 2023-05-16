@@ -7,11 +7,15 @@ var generateBtn = myDocument.querySelector("#generate");
 var resetBtn = myDocument.querySelector("#reset");
 
 // Generate Password
+// Generate Password
 function generatePassword() {
   var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
   var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   var numberChars = "0123456789";
   var symbolChars = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
+
+  // Prompt the user for letter selection
+  var includeLetters = confirm("Do you want to include both lowercase and uppercase letters in your password?");
 
   // Prompt the user for password length
   var passwordLength = parseInt(prompt("Enter the desired length of your password (between 8 and 128 characters):"));
@@ -26,7 +30,11 @@ function generatePassword() {
   var includeSymbols = confirm("Do you want to include symbols in your password?");
 
   // Build the character set based on user preferences
-  var charset = lowercaseChars + uppercaseChars + numberChars;
+  var charset = "";
+  if (includeLetters) {
+    charset += lowercaseChars + uppercaseChars;
+  }
+  charset += numberChars;
   if (includeSymbols) {
     charset += symbolChars;
   }
