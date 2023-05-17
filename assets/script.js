@@ -44,6 +44,7 @@ function generatePassword() {
 
   // Loop through the password length and randomly select characters from the charset
   for (var i = 0; i < passwordLength; i++) {
+    console.log (i)
     var randomIndex = Math.floor(Math.random() * charset.length);
     password += charset[randomIndex];
   }
@@ -62,21 +63,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-// Define the submit event handler function
-function handleSubmit(event) {
-  event.preventDefault();
-
-  var passwordInput = myDocument.querySelector("#password");
-  var password = passwordInput.value;
-
-  if (password.length < 8 || password.length > 128) {
-    alert("Password must be between 8 and 128 characters long.");
-    return;
-  }
-
-  var passwordText = myDocument.querySelector("#password");
-  passwordText.value = password;
-}
-
-submitBtn.addEventListener("click", handleSubmit);
