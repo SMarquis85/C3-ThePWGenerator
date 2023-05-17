@@ -36,7 +36,7 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Final Work Review
 
-**"Always leave the code a little cleaner than when you found it."**  This action was applied to HTML, CSS and JAVASCRIPT with the help of Patrick Lake(Tutor), Google, W3Schools and CSSPortal. Looks much cleaner, organised and easier to find what you are looking for. Comments were added in JAVASCRIPT to show what was done and for what purpose. 
+**"Always leave the code a little cleaner than when you found it."**  This action was applied to HTML, CSS and JAVASCRIPT with the help of Patrick Lake(Tutor), Google, W3Schools, CSSPortal and Snyk. Looks much cleaner, organised and easier to find what you are looking for. Comments were added in JAVASCRIPT to show what was done and for what purpose. 
 > **(CARL-VIRT-FSF-PT-04-2023, Challenge 3 / README.md 2023)**
 
 The following images show the web application's appearance and functionality. (See below)
