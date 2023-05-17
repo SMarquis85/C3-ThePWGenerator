@@ -6,7 +6,7 @@ var submitBtn = myDocument.querySelector("#submit");
 var generateBtn = myDocument.querySelector("#generate");
 var resetBtn = myDocument.querySelector("#reset");
 
-// Generate Password
+
 // Generate Password
 function generatePassword() {
   var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
